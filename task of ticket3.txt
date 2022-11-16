@@ -1,0 +1,11 @@
+// *** Напишите код, с помощью которого можно перевернуть массив ***
+
+	int[] arr = {1, 2, 3, 4, 5}; // ---> [1, 2, 3, 4, 5]
+	int reverse = arr.length;
+	for (int i=0; i < reverse; i++) {
+		int temp = arr[reverse];
+		arr[reverse] = arr[i];
+		arr[i] = temp;
+		reverse--;
+	}
+				// ---> [5, 4, 3, 2, 1]
